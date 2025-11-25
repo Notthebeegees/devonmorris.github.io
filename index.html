@@ -5,11 +5,31 @@
         <title>?</title>
         <style>
             img {
-                object-fit: fill;
+                width: 100%;
+                height: auto;
             }
+            html, body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                background: #000;
+            }
+            .banner {
+                text-align: center;
+            }
+            .banner h3 {
+                color: white;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+
         </style>
     </head>
     <body>
-        <img src="lilguyinthecorner.jpg">
+        <div class="banner">
+            <h3>Devon Morris</h3>
+            <img src="goya.jpg">
+        </div>
         </body>
 </html>

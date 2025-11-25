@@ -5,24 +5,29 @@
         <title>devonmorris.nz</title>
         <link rel="icon" type="image/jpg" href="favicon.jpg">
         <style>
-            img {
-                width: auto;
+            .goya img {
+                width: 100vw;
                 height: auto;
+                min-height: 100vh;
                 object-fit: cover;
                 display: block;
-                object-position: center;
+                object-position: top left;
             }
             html, body {
                 margin: 0;
                 padding: 0;
                 width: 100%;
+                height: 100%;
                 background: #000;
+                overflow-y: auto;
             }
-            .banner {
+            .goya {
                 text-align: center;
-                overflow: hidden;
+                overflow: visible;
+                height: 100%;
+                width: 100%;
             }
-            .banner h3 {
+            .goya h3 {
                 color: white;
                 position: absolute;
                 left: 50%;
@@ -32,7 +37,7 @@
         </style>
     </head>
     <body>
-        <div class="banner">
+        <div class="goya">
             <h3>Devon Morris</h3>
             <img src="goya.jpg">
         </div>
